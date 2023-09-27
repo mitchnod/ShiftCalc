@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="form_container">
+        <form id="form">
+            <p id="total_amount"></p>
+            <!-- Shift 1 -->
+            <div class="shift_container">
+                <p for="shift0">Shift 1</p>
+        
+                <div class="weekend_hours">
+                    <input type="number" placeholder="Hours" id="hours0">
+                    <input type="checkbox" name="weekend0" id="weekend0">
+                    <label for="weekend0">Weekend</label><br>
+                </div>
+        
+                <div class="radio_btns">
+                    <input type="radio" name="shift_type0" id="A0">
+                    <label for="A0">A</label>
+            
+                    <input type="radio" name="shift_type0" id="P0">
+                    <label for="P0">P</label>
+            
+                    <input type="radio" name="shift_type0" id="D0">
+                    <label for="D0">D</label>
+            
+                    <input type="radio" name="shift_type0" id="E0">
+                    <label for="E0">E</label> <br>
+                </div>
+            </div>
+        </form>
+        <div id="img">
+            <img src="plus.png" alt="plus" onclick="add_shift()" id="add_btn">
+        </div>
+        <div id="calcbtn_container">
+            <button onclick="calculate()" type="button" id="calc_btn">Calculate</button>
+        </div>
+    </div>
+</body>
+</html>

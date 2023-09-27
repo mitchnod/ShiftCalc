@@ -1,0 +1,137 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #89cff0;
+}
+
+#form_container{
+    width: 230px;
+}
+
+p{
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(31, 122, 164);
+}
+
+button{
+    padding: 5px 5px;
+    width: 40%;
+    border: none;
+    background-color: #2E8B57;
+    border-radius: 20px;
+}
+
+#calc_btn{
+    padding: 10px 5px;
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+#calcbtn_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#calc_btn:hover{
+    background-color: #267448;
+}
+
+button:hover, #add_btn:hover, .radio_btns label:hover, .weekend_hours label:hover{
+    cursor: pointer;
+}
+
+#total_amount{
+    text-align: center;
+}
+
+input[type=radio]{
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    display: none;
+}
+
+input[type=number]{
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.radio_btns{
+    display: flex;
+    justify-content: center;
+}
+
+#total_amount{
+    color: #2E8B57;
+    font-size: 20px;
+}
+
+.weekend_hours label{
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.weekend_hours{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.radio_btns input[type="radio"]:checked + label{
+    background-color: rgb(221, 221, 221);
+}
+
+.weekend_hours input[type="checkbox"]:checked + label{
+    background-color: rgb(221, 221, 221);
+}
+
+.radio_btns label{
+    display: inline-block;
+    padding: 4px 15px;
+    background-color: white;
+    border-radius: 9px;
+    margin: 5px;
+}
+
+.radio_btns label:hover, .weekend_hours label:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.shift_container{
+    background-color: rgb(105, 189, 227);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 9px;
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#add_btn{
+    width: 40px;
+}
